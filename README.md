@@ -1,5 +1,6 @@
 # rocky-vision
-Welcome to Rocky Vision.
+Rocky está esperando 
+
 NO SIGNAL
 
 A television experience by Rocky.
