@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rocky Vision</title>
+<style>
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  background: #050505;
+  color: white;
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+header {
+  padding: 25px;
+  border-bottom: 2px solid white;
+}
+h1 { letter-spacing: 5px; }
+.tv {
+  margin: 50px auto;
+  width: 85%;
+  max-width: 650px;
+  aspect-ratio: 16 / 9;
+  background: repeating-linear-gradient(
+    0deg, #111 0px, #111 2px, #222 3px, #111 4px
+  );
+  border: 5px solid white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 0 25px #555;
+}
+.tv h2 {
+  font-size: clamp(25px, 7vw, 55px);
+  letter-spacing: 5px;
+  text-shadow: 3px 3px #555;
+}
+button {
+  background: black;
+  color: white;
+  border: 2px solid white;
+  padding: 12px 25px;
+  font-size: 16px;
+  cursor: pointer;
+}
+button:hover {
+  background: white;
+  color: black;
+}
+footer {
+  margin-top: 60px;
+  padding: 20px;
+  border-top: 1px solid white;
+}
+</style>
+</head>
+<body>
+<header>
+  <h1>ROCKY VISION</h1>
+  <p>A television experience by Rocky.</p>
+</header>
+
+<main>
+  <div class="tv">
+    <h2>NO SIGNAL</h2>
+  </div>
+  <button onclick="alert('NO SIGNAL...')">ENTER</button>
+</main>
+
+<footer>
+  <p>© ROCKY VISION</p>
+</footer>
+</body>
+</html>
