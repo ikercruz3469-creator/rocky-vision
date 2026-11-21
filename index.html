@@ -73,35 +73,6 @@ footer {
 <footer>
   <p>© ROCKY VISION</p>
 </footer>
-  <script>
-const countdownKey = "rockyVisionEndTime";
-
-let endTime = localStorage.getItem(countdownKey);
-
-if (!endTime) {
-  endTime = Date.now() + 3600000;
-  localStorage.setItem(countdownKey, endTime);
-}
-
-function updateCountdown() {
-  let remaining = Math.max(0, Math.floor((endTime - Date.now()) / 1000));
-
-  let hours = Math.floor(remaining / 3600);
-  let minutes = Math.floor((remaining % 3600) / 60);
-  let seconds = remaining % 60;
-
-  const display = document.getElementById("countdown");
-
-  if (display) {
-    display.textContent =
-      String(hours).padStart(2, "0") + ":" +
-      String(minutes).padStart(2, "0") + ":" +
-      String(seconds).padStart(2, "0");
-  }
-}
-
-updateCountdown();
-setInterval(updateCountdown, 1000);
   </script>
 </body>
 </html>
